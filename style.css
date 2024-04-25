@@ -1,0 +1,920 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100vh;
+  width: 100%;
+  background-color: #0f0f0f;
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(fonts/Gilroy-Regular\ \(1\).ttf)
+}
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url(fonts/Gilroy-SemiBold.ttf);
+}
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://web.archive.org/web/20240206194924im_/https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+}
+#nav {
+  height: 17vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Gilroy-Bold;
+  align-items: center;
+  padding: 2vh 10vw;
+  position: fixed;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+#nav-left img {
+  object-fit: cover;
+  height: 10vh;
+  cursor: pointer;
+}
+#nav-right {
+  display: flex;
+  color: #f8f8f8;
+  gap: 3vw;
+  cursor: pointer;
+}
+#nav-right span{
+  display: none;
+}
+#page1-hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #f8f8f8;
+  padding: 30vh 15vw 0vh 15vw;
+}
+#page1-hero h1 {
+  font-family: Gilroy-Bold;
+  font-size: 7vw;
+  text-align: center;
+}
+#page1-hero h2 {
+  font-family: Gilroy-Bold;
+  font-size: 2vw;
+  text-align: center;
+}
+#page1-hero button {
+  height: 10vh;
+  width: 20vw;
+  border-radius: 50px;
+  margin-top: 5vh;
+  font-size: 1.5vw;
+  font-family: Gilroy-Bold;
+  border: none;
+  cursor: pointer;
+}
+#page1-hero button:hover {
+  color: #ffff;
+  background-color: #0f0f0f;
+  border: 1px solid #ffff;
+}
+.page2 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-image: url(https://web.archive.org/web/20240206194926im_/https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png);
+}
+.page2 img {
+  height: 100vh;
+  width: 27vw;
+}
+#center {
+  position: absolute;
+  left: 33%;
+  top: 10%;
+  z-index: 99;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+}
+#left1 {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 90;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+}
+#left2 {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  z-index: 9;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+}
+#right1 {
+  position: absolute;
+  right: 26%;
+  top: 20%;
+  z-index: 90;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+}
+#right2 {
+  position: absolute;
+  right: 16%;
+  top: 30%;
+  z-index: 9;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+}
+.same {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30vh 10vw 2vh 10vw;
+  gap: 1vw;
+  color: #f5e3e8;
+}
+.page3 {
+  background-size: cover;
+  background-image: url(assets/deserve-more-bg.jpg);
+}
+.same h1 {
+  font-family: Gilroy-bold;
+  font-size: 6.5vw;
+  line-height: 6vw;
+}
+.same h2 {
+  font-family: Gilroy-bold;
+  font-size: 2vw;
+}
+.same p {
+  font-family: Gilroy-SemiBold;
+  width: 55%;
+  font-size: 1.15vw;
+}
+.same button {
+  height: 10vh;
+  width: 20vw;
+  border-radius: 50px;
+  margin-top: 5vh;
+  font-size: 1.5vw;
+  font-family: Gilroy-Bold;
+  border: none;
+  cursor: pointer;
+}
+.same button:hover {
+  color: #ffff;
+  background-color: #0f0f0f00;
+  border: 1px solid #ffff;
+}
+#page4{
+    height:33vh;
+    width: 100%;
+    font-family: Gilroy-SemiBold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0vh 10vw 0vh 10vw ;
+    gap:3.1vw;
+}
+#page4 img{
+    width:80vw;
+    object-fit: cover;
+}
+.page5{
+    background-size: cover;
+    background-image:url(assets/money-matters-bg.jpg);
+}
+#page6{
+    min-height: 100vh;
+    padding:20vh 10vw 0vh 10vw ;
+    background-image: url(https://web.archive.org/web/20240206194924im_/https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+    background-size: cover;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    gap:20vw;
+    color:#E1E1E1;
+}
+.sametxt{
+    display: flex;
+    position: absolute;
+    transition: all cubic-bezier(0.19,1,0.22,1)1s;
+    flex-direction: column;
+    gap:2vw;
+}
+.sametxt p{
+    font-family: Gilroy-SemiBold;
+    font-size: 1.2vw;
+}
+.sametxt h1{
+    font-family: Gilroy-Bold;
+    font-size:7vw ;
+}
+#imgdiv{
+    height:80vh;
+    width:22vw;
+    position: absolute;
+    left:65%;
+    border: 15px solid rgb(37, 36, 36);
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+    background-color: #000000;
+}
+#imgdiv img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#img1,#img2,#img3,#img4{
+    transition: all cubic-bezier(0.19,1,0.22,1)1s;
+}
+.text1{
+    bottom:15vh;
+    transition: all cubic-bezier(0.19,1,0.22,1)0.5s;
+}
+.text2,.text3,.text4{
+    opacity: 0;
+    bottom:15%;
+    transition: all cubic-bezier(0.19,1,0.22,1)0.5s;
+}
+#page7{
+    height:60vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(assets/neopop-image-mock.png);
+}
+#page7 img{
+    height: 100%;
+    width: 100%;
+}
+.page8{
+    background-size: cover;
+    background-image:url(assets/security-bg.jpg);
+}
+#page9{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding:21vh 10vw 0vh 15vw ;
+    color: #DFEBE8;
+    gap:8vw;
+    background-image: url(assets/trust-bg.jpg);
+    background-size: cover;
+}
+#page9 h1{
+    margin-top: 20vh;
+    font-family: Gilroy-bold;
+    font-size: 3.7vw;
+    width:40%;
+}
+#page9 p{
+    width: 45%;
+    font-family: Gilroy-SemiBold;
+    font-size: 1.1vw;
+    font-weight: 100;
+    line-height: 1.7vw;
+}
+#page10{
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+    background-color: #101010;
+    color: #E1E1E1;
+}
+#page10-top{
+    display: flex;
+    height: 55vh;
+    width: 100%;
+    padding:15vh 10vw 0 20vw ;
+    gap:6vw;
+}
+#top{
+    display: flex;
+    align-items: center;
+    gap:1.7vw;
+    font-family: Gilroy-Bold;
+}
+#top h1{
+    font-size: 10vw;
+}
+#top h2{
+    font-size: 4vw;
+    line-height: 4vw;
+}
+#page10 img{
+    height: 4vh;
+    width:12vw;
+}
+#page10 button {
+    height: 10vh;
+    width: 20vw;
+    border-radius: 50px;
+    margin-top: 5vh;
+    font-size: 1.5vw;
+    font-family: Gilroy-Bold;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #page10 button img{
+    width:2vw;
+  }
+  #page10 button:hover {
+    color: #ffff;
+    background-color: #0f0f0f;
+    border: 1px solid #ffff;
+  }
+#page10-bottom{
+    height:30vh;
+    width: 100%;
+    margin-left: 20vw;
+    font-family: Gilroy-Regular;
+
+}
+#swipe{
+    height: 30vh;
+    width:50%;
+    margin-top: 20vh;
+    margin-right: 9vw;
+}
+  swiper {
+    width: 100%;
+    height: 120%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #E1E1E1;
+  }
+
+#page11{
+    background-color: #161517;
+    height: 100vh;
+    width: 100%;
+    color: #E1E1E1;
+    
+}
+#page11-top{
+    height: 100vh;
+    display: flex;
+}
+#page11-bottom{
+    height: 20vh;
+}
+#page11-top #part2 h1 span{
+  display: none;
+}
+#page11-top #part1{
+    width:50%;
+    height: 100%;
+    padding:7vw 10vw 8vw 10vw;
+    display: flex;
+    gap:2vw;
+    flex-direction: column;
+}
+#page11-top #part1 #cred{
+    width:12vw;
+    margin-bottom: 13vh;
+}
+#page11-top #part1 #logos{
+    width:25vw;
+}
+#page11-top #part1 h2{
+    font-family: Gilroy-Bold;
+}
+#page11-top #part1 p{
+    font-family: Gilroy-Regular;
+    font-size: 1.25vw;
+    color: #B9B9BA;
+    font-weight: 500;
+}
+#page11-top #part2{
+    width:25%;
+    height: 100%;
+    padding:7vw 3vw 8vw 3vw;
+    display: flex;
+    gap:2vw;
+    flex-direction: column;
+}
+#page11-top #part2 h1{
+    font-family: Gilroy-Bold;
+    font-size: 1.3vw;
+}
+#page11-top #part2 .tag-list{
+    font-family: Gilroy-Regular;
+    font-size: 1.25vw;
+    color: #B9B9BA;
+    cursor: pointer;
+    font-weight: 500;
+    width: 111%;
+    line-height: 2.5vw;
+    display:initial;
+    list-style-type: none;
+    padding: 0;
+}
+#page11-top #part3{
+    width:25%;
+    height: 100%;
+    padding:7vw 5vw 8vw 1vw;
+    display: flex;
+    gap:2vw;
+    flex-direction: column;
+}
+#page11-top #part3 h1 span{
+  display: none;
+}
+#page11-top #part3 h1{
+    font-family: Gilroy-Bold;
+    font-size: 1.3vw;
+}
+#page11-top #part3 .tag-list{
+  font-family: Gilroy-Regular;
+  font-size: 1.25vw;
+  color: #B9B9BA;
+  cursor: pointer;
+  font-weight: 500;
+  width: 111%;
+  line-height: 2.5vw;
+  display:initial;
+  list-style-type: none;
+  padding: 0;
+}
+@media (max-width:600px) {
+  .page1 {
+    height:80vh;
+    width: 100%;
+    background-image: url(https://web.archive.org/web/20240206194924im_/https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+  }
+  #nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Gilroy-Bold;
+    align-items: center;
+    padding: 2vh 10vw;
+    position: fixed;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  }
+  #nav-left img {
+    object-fit: cover;
+    height: 5vh;
+    cursor: pointer;
+  }
+  #nav-right {
+    display: flex;
+    color: #f8f8f8;
+    gap: 3vw;
+    /* display: none; */
+    cursor: pointer;
+  }
+  #nav-right h3 {
+    display: none;
+  }
+  #nav-right span{
+    display: initial;
+    font-size:7vw;
+  }
+  #page1-hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #f8f8f8;
+    padding: 30vh 15vw 0vh 15vw;
+  }
+  #page1-hero h1 {
+    font-family: Gilroy-Bold;
+    font-size: 10vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  #page1-hero h2 {
+    font-family: Gilroy-Bold;
+    font-size: 4vw;
+    text-align: center;
+  }
+  #page1-hero button {
+    height: 7vh;
+    width: 40vw;
+    border-radius: 50px;
+    margin-top: 5vh;
+    font-size: 4vw;
+    font-family: Gilroy-Bold;
+    border: none;
+    cursor: pointer;
+  }
+  #page1-hero button:hover {
+    color: #ffff;
+    background-color: #0f0f0f;
+    border: 1px solid #ffff;
+  }
+  .page2 {
+    position: relative;
+    height: 55vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-image: url(https://web.archive.org/web/20240206194926im_/https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png);
+  }
+  .page2 img {
+    height: 40vh;
+    width: 32vw;
+  }
+  #center {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    z-index: 99;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+  }
+  #left1 {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    z-index: 90;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+  }
+  #left2 {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    z-index: 9;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+  }
+  #right1 {
+    position: absolute;
+    right: 26%;
+    top: 20%;
+    z-index: 90;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+  }
+  #right2 {
+    position: absolute;
+    right: 16%;
+    top: 30%;
+    z-index: 9;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+  }
+  #page4{
+    height:33vh;
+    width: 100%;
+    font-family: Gilroy-SemiBold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0vh 10vw 0vh 10vw ;
+    gap:3.1vw;
+}
+#page4 img{
+    width:80vw;
+    object-fit: cover;
+}
+  #page6{
+    min-height: 100vh;
+    padding:20vh 10vw 0vh 10vw ;
+    background-image: url(https://web.archive.org/web/20240206194924im_/https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+    background-size: cover;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    gap:5vw;
+    color:#E1E1E1;
+}
+.sametxt{
+    display: flex;
+    position: absolute;
+    transition: all cubic-bezier(0.19,1,0.22,1)1s;
+    flex-direction: column;
+    gap:2vw;
+}
+.sametxt p{
+    font-family: Gilroy-SemiBold;
+    font-size: 2.5vw;
+    width: 50%;
+}
+.sametxt h1{
+    font-family: Gilroy-Bold;
+    font-size:7vw ;
+}
+#imgdiv{
+    height:40vh;
+    width:40vw;
+    position: absolute;
+    left:55%;
+    border: 15px solid rgb(37, 36, 36);
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+    background-color: #000000;
+}
+#imgdiv img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#img1,#img2,#img3,#img4{
+    transition: all cubic-bezier(0.19,1,0.22,1)1s;
+}
+.text1{
+    bottom:15vh;
+    transition: all cubic-bezier(0.19,1,0.22,1)0.5s;
+}
+.text2,.text3,.text4{
+    opacity: 0;
+    bottom:15%;
+    transition: all cubic-bezier(0.19,1,0.22,1)0.5s;
+}
+  .same h1 {
+    font-family: Gilroy-bold;
+    font-size: 13vw;
+    line-height:13vw;
+  }
+  .same h2 {
+    font-family: Gilroy-bold;
+    font-size: 5vw;
+  }
+  .same p {
+    font-family: Gilroy-SemiBold;
+    width:70%;
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+  .same button {
+    height: 5vh;
+    width: 40vw;
+    border-radius: 50px;
+    margin-top: 5vh;
+    font-size: 3vw;
+    font-family: Gilroy-Bold;
+    border: none;
+    cursor: pointer;
+  }
+  #page9{
+    display: flex;
+    flex-direction: column;
+    padding:10vh 10vw 0vh 15vw ;
+    color: #DFEBE8;
+    gap:8vw;
+    background-image: url(assets/trust-bg.jpg);
+    background-size: cover;
+}
+#page9 h1{
+    margin-top: 0vh;
+    font-family: Gilroy-bold;
+    font-size:13vw;
+    width:100%;
+}
+#page9 p{
+    width: 100%;
+    font-family: Gilroy-SemiBold;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 4vw;
+}
+  #page10{
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+    background-color: #101010;
+    color: #E1E1E1;
+}
+#page10-top{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 100%;
+    padding:10vh 10vw 0 20vw ;
+    margin-bottom: 20vw;
+    gap:0vw;
+}
+#top{
+    display: flex;
+    align-items: center;
+    gap:1.7vw;
+    font-family: Gilroy-Bold;
+}
+#top h1{
+    font-size: 20vw;
+}
+#top h2{
+    font-size: 10vw;
+    line-height: 10vw;
+}
+#page10 img{
+    height: 3vh;
+    width:27vw;
+}
+#page10 button {
+    height: 5vh;
+    width: 40vw;
+    padding: 2vw;
+    margin-top: 3vh;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+  }
+  #page10 button img{
+    width:5vw;
+    height: 3vh;
+  }
+#page10-bottom{
+    height:45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0vw;
+    font-family: Gilroy-Regular;
+
+}
+#swipe{
+    height: 30vh;
+    width:80%;
+    margin-top: 0vh;
+    margin-right: 0vw;
+}
+  swiper {
+    width: 100%;
+    height: 120%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #E1E1E1;
+  }
+
+#page11{
+    background-color: #161517;
+    height: 100vh;
+    width: 100%;
+    color: #E1E1E1;
+    overflow: hidden;
+    
+}
+#page11-top{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  
+}
+#page11-top #part1{
+    width:100%;
+    height: 50%;
+    padding:12vw 10vw 0vw 10vw;
+    display: flex;
+    gap:2vw;
+    flex-direction: column;
+}
+#page11-top #part1 #cred{
+    width:35vw;
+    margin-bottom: 5vh;
+}
+#page11-top #part1 #logos{
+    width:75vw;
+    margin-bottom: 5vw;
+}
+#page11-top #part1 h2{
+    font-family: Gilroy-Bold;
+    font-size: 7vw;
+    line-height: 6.5vw;
+    margin-bottom: 3vw;
+}
+#page11-top #part1 p{
+    font-family: Gilroy-SemiBold;
+    font-size: 4vw;
+    color: #B9B9BA;
+    font-weight: 500;
+}
+#page11-top #part2{
+    width:100%;
+    height: 25%;
+    padding:7vw 10vw 0vw 10vw;
+    display: flex;
+    gap:0vw;  
+    flex-direction: column;
+}
+#page11-top #part2 h1{
+    font-family: Gilroy-Bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 5vw;
+    border-bottom: 2px solid #DFEBE8;
+    width: 100%;
+    margin-top: -5vw;
+}
+#page11-top #part2 h1 span{
+  display: initial;
+  font-size: 5vw;
+}
+#page11-top #part2 h1 span{
+  display: initial;
+  font-size: 5vw;
+}
+
+#page11-top #part2 .tag-list {
+    font-family: Gilroy-SemiBold;
+    font-size: 4vw;
+    color: #B9B9BA;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+    line-height: 2vw;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+.tag-list li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tag-list a {
+  color: #fff;
+  text-decoration: none;
+}
+.tag-list a:hover {
+  text-decoration: underline;
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+#page11-top #part3{
+  width:100%;
+  height: 60%;
+  padding:0vw 10vw 0vw 10vw;
+  display: flex;
+  gap:0vw;  
+  flex-direction: column;
+}
+#page11-top #part3 h1{
+  font-family: Gilroy-Bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 5vw;
+  border-bottom: 2px solid #DFEBE8;
+  width: 100%;
+
+}
+#page11-top #part3 h1 span{
+  display: initial;
+  font-size: 5vw;
+}
+#page11-top #part3 .tag-list{
+  font-family: Gilroy-SemiBold;
+  font-size: 4vw;
+  color: #B9B9BA;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  line-height: 2vw;
+  display: none;
+  list-style-type: none;
+  padding:2vw 0;
+}
+}
